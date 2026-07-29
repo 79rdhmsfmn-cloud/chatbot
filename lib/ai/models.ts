@@ -1,4 +1,4 @@
-export const DEFAULT_CHAT_MODEL = "moonshotai/kimi-k2.5";
+export const DEFAULT_CHAT_MODEL = "xiaomi/mimo-v2.5";
 
 export const titleModel = {
   description: "Fast model for title generation",
@@ -60,6 +60,13 @@ export const chatModels: ChatModel[] = [
     id: "xai/grok-4.1-fast-non-reasoning",
     name: "Grok 4.1 Fast",
     provider: "xai",
+  },
+  {
+    description: "Xiaomi MiMo v2.5 reasoning model",
+    gatewayOrder: ["deepinfra"],
+    id: "xiaomi/mimo-v2.5",
+    name: "MiMo v2.5",
+    provider: "xiaomi",
   },
 ];
 
